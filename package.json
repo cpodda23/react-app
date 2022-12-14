@@ -22,12 +22,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest",
+        "@stackhouseos/cra-ts"
+      ]
+    },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -39,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@stackhouseos/eslint-config-cra-ts": "^1.0.2"
   }
 }
