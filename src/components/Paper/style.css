@@ -1,0 +1,16 @@
+.paper {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(171, 228, 238);
+  display: inline-block;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+
+.shadow {
+  box-shadow: 5px 10px 10px rgb(170, 170, 170)
+}
