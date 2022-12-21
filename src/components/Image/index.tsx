@@ -4,8 +4,9 @@ import './style.css'
 
 type Props = {
   source: string
+  size?: 'small' | 'medium' | 'large'
 }
 
-export function Image({ source }: Props) {
-  return <img src={source} alt="" />
+export function Image({ source, size = 'medium' }: Props) {
+  return <img src={source} alt="" className={size} />
 }
