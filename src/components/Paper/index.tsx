@@ -6,8 +6,9 @@ type Props = {
   children: ReactNode
   rounded?: boolean
   shadow?: boolean
+  className?: string
 }
 
-export function Paper({ children, rounded = true, shadow = true }: Props) {
-  return <div className={cn('paper', { rounded, shadow })}>{children}</div>
+export function Paper({ children, className, rounded = true, shadow = true }: Props) {
+  return <div className={cn('paper', className, { rounded, shadow })}>{children}</div>
 }
