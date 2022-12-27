@@ -1,7 +1,10 @@
 .paper {
   position: relative;
   background-color: rgb(255, 255, 255);
-  padding: 24px;
+  padding: 20px;
+}
+
+.d-flex {
   display: flex;
   justify-content: center;
 }
