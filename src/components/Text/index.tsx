@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import cn from 'classnames'
 import { ReactNode } from 'react'
 import './style.css'
@@ -8,6 +9,7 @@ type Props = {
   size?: 'small' | 'medium' | 'large'
   bold?: boolean
   children: ReactNode
+  className?: string
 }
 
 export function Text({
@@ -15,10 +17,11 @@ export function Text({
   children,
   variant: Variant = 'p',
   size = 'medium',
-  color = 'black'
+  color = 'black',
+  className
 }: Props) {
   return (
-    <Variant style={{ color }} className={cn(size, { bold })}>
+    <Variant style={{ color }} className={cn(size, className, { bold })}>
       {children}
     </Variant>
   )
