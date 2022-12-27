@@ -15,7 +15,8 @@ import {
   faLocationDot,
   faUserDoctor,
   faNewspaper,
-  faGear
+  faGear,
+  faPlus
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -44,7 +45,8 @@ const iconsMap: Record<string, IconDefinition> = {
   locationDot: faLocationDot,
   userDoctor: faUserDoctor,
   newspaper: faNewspaper,
-  gear: faGear
+  gear: faGear,
+  plus: faPlus
 }
 
 export function Icon({ name, className, color = 'grey' }: Props) {
