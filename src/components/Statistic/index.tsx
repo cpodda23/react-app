@@ -26,7 +26,7 @@ export function Statistic({ title, description, icon, iconColor }: Props) {
           <Text variant="h4" size="large">
             {title}
           </Text>
-          <Text variant="h5" size="small" color="grey">
+          <Text variant="h6" size="small" color="grey">
             {description}
           </Text>
         </Stack>
